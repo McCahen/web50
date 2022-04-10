@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Search</title>
+      <link rel="stylesheet" href="stylesheet.css">
+
+      <style>
+        .button {
+          background-color: #487bff;
+          color: white;
+          border-radius:3px;
+          padding-left:15px;
+          padding-right:15px;
+          padding-top:10px;
+          padding-bottom:10px;          
+          font-weight:bold;
+
+        }
+
+        .button:active {
+          background-color: gray;
+          color: black;
+        }
+      </style>
+  </head>
+  <body>
+    <div style="display: inline">
+      <img id="logo" style="width: 120px; margin:15px;" src="Google_logo.svg">
+    </div>
+    <div style="float: right; margin: 20px;">
+      <form style="display: inline;" action="index.html">
+        <button type="submit">General Search</button>
+      </form>
+      <form style="display: inline; align: right;" action="image_search.html">
+        <button type="submit">Image Search</button>
+      </form>
+    </div>
+
+    <br>
+
+    <div style="text-align: left; margin-top: 50px; margin-left: 25px">
+      <h2>Advanced Search</h2>
+
+      <form action="https://www.google.com/search">
+        <h3>Find pages with...</h3>
+        <table>
+          <tbody>
+            <tr><td>all these words:</td><td><input class="advanced" type="text" name="as_q"><br></td></tr>
+            <tr><td>this exact word or phrase:</td><td><input class="advanced" type="text" name="as_epq"><br></td></tr>
+            <tr><td>any of these words:</td><td><input class="advanced" type="text" name="as_oq"><br></td></tr>
+            <tr><td>none of these words:</td><td><input class="advanced" type="text" name="as_eq"><br></td></tr>
+            <tr><td></td><td><input class="button" style="float: right;" type="submit" value="Advanced Search"></td></tr>
+          </tbody>
+
+      </form>
+
+      <br>
+
+
+
+    </div>
+  </body>
+</html>
